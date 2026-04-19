@@ -453,6 +453,62 @@
       font-weight: 700;
       opacity: 0;
       transition: opacity 0.3s;
+      pointer-events: none;
+    }
+ 
+    /* ALL CHARTERS SECTION */
+    #all-charters { background: var(--ocean); border-top: 1px solid var(--border); }
+ 
+    .charters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+ 
+    .charter-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--gold);
+      padding: 1.5rem;
+      transition: all 0.3s;
+      position: relative;
+    }
+ 
+    .charter-item:hover {
+      border-color: var(--gold);
+      background: var(--gold-pale);
+      transform: translateY(-3px);
+    }
+ 
+    .charter-item-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+ 
+    .charter-item-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+ 
+    .charter-item-desc {
+      font-size: 0.82rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+      font-weight: 300;
+      margin-bottom: 0.75rem;
+    }
+ 
+    .charter-item-price {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
     }
  
     .gallery-item:hover::after { opacity: 1; }
@@ -884,6 +940,7 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#trips">Trips</a></li>
+      <li><a href="#all-charters">All Charters</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#booking">Book Now</a></li>
       <li><a href="#about">About</a></li>
@@ -924,7 +981,7 @@
         <div class="hero-stat-label">Passenger Max</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">4+</div>
+        <div class="hero-stat-num">8+</div>
         <div class="hero-stat-label">Trip Options</div>
       </div>
     </div>
@@ -979,6 +1036,65 @@
             </div>
             <div class="trip-price">$1,800 <span class="trip-price-label">/ trip</span></div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ALL CHARTERS -->
+  <section id="all-charters">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Everything We Offer</div>
+      <h2 class="section-title">All Charter Types</h2>
+      <p class="section-sub">From family friendly half days to serious deep water expeditions — we offer a trip for every angler.</p>
+      <div class="charters-grid">
+        <div class="charter-item">
+          <div class="charter-item-icon">🌅</div>
+          <div class="charter-item-name">Half Day Charter</div>
+          <div class="charter-item-desc">4–5 hours nearshore. Perfect for families and beginners targeting Snapper, Grouper, and Amberjack.</div>
+          <div class="charter-item-price">Starting at $800</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">🐟</div>
+          <div class="charter-item-name">Full Day Charter</div>
+          <div class="charter-item-desc">8–10 hours offshore chasing Mahi-Mahi, Wahoo, Tuna, and more on the open Gulf.</div>
+          <div class="charter-item-price">Starting at $1,400</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">🏆</div>
+          <div class="charter-item-name">Deep Drop Charter</div>
+          <div class="charter-item-desc">12+ hours targeting Swordfish, Tilefish, and deep water Grouper for the serious angler.</div>
+          <div class="charter-item-price">Starting at $1,800</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">🌊</div>
+          <div class="charter-item-name">Inshore Charter</div>
+          <div class="charter-item-desc">Bay and backwater fishing targeting Redfish, Speckled Trout, and Flounder. Great for all skill levels.</div>
+          <div class="charter-item-price">Contact for Pricing</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">🌇</div>
+          <div class="charter-item-name">Sunset Charter</div>
+          <div class="charter-item-desc">Evening fishing trip with stunning Gulf sunsets. A relaxing and memorable experience on the water.</div>
+          <div class="charter-item-price">Contact for Pricing</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">🦈</div>
+          <div class="charter-item-name">Shark Fishing</div>
+          <div class="charter-item-desc">Specialized shark targeting trips for thrill seekers. Catch and release available.</div>
+          <div class="charter-item-price">Contact for Pricing</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">⚓</div>
+          <div class="charter-item-name">Private Charter</div>
+          <div class="charter-item-desc">Fully customized private trip for your group. You choose the target species, duration, and experience.</div>
+          <div class="charter-item-price">Contact for Pricing</div>
+        </div>
+        <div class="charter-item">
+          <div class="charter-item-icon">👥</div>
+          <div class="charter-item-name">Corporate & Group</div>
+          <div class="charter-item-desc">Team building and corporate events on the water. We handle everything so you can focus on your group.</div>
+          <div class="charter-item-price">Contact for Pricing</div>
         </div>
       </div>
     </div>
